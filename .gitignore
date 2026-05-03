@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+#include <windows.h>
+#include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
+
+int main()
+{
+    PlaySound(TEXT("67.exe"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+
+    // your GDI loop here
+    while (true)
+    {
+        // GDI effects...
+    }
+
+    return 0;
+}
